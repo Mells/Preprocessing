@@ -77,17 +77,17 @@ def trim_vocabulary(voc_list):
 
     return voc_list, voc_list2, second_voc_list
 
-with open("../02_tokenize/sentences_all_test_map.csv", 'r') as sentin, open('../02_tokenize/new_Vokabelliste.csv', 'r') as vocin:
-    with open('map_test_matched_' + "vocabulary.csv", 'w') as vocout, open("test_not_matched.csv", 'w') as nmatched:
+with open("../02_tokenize/sentences_all.csv", 'r') as sentin, open('../02_tokenize/new_Vokabelliste.csv', 'r') as vocin:
+    with open("matched_vocabulary.csv", 'w') as vocout, open("not_matched.csv", 'w') as nmatched:
 
         sentreader = csv.reader(sentin, delimiter=';')
         vocreader = csv.reader(vocin, delimiter=';')
         vocwriter = csv.writer(vocout, delimiter=';')
         no_matched = csv.writer(nmatched, delimiter=';')
-        # TODO change here
-        #vocwriter.writerow(next(vocreader) + ["SentId"] + ["0"])
-        sth = next(vocreader) # delete
-        vocwriter.writerow([sth[0]] + [sth[1]] + ["VocLemma"] + sth[2:] + ["SentId"] + ["Tested"]) # delete
+
+        old_header = next(vocreader)
+        vocwriter.writerow([old_header[0]] + [old_header[1]] + ["VocLemma"] + old_header[2:] + ["SentId"] + ["Tested"])
+
         next(sentreader)
 
         voc_matched = 0

@@ -28,7 +28,7 @@ def extract(root, book_nr, id):
         for s in sentence:
             tokenized = word_tokenize(s.text)
             # todo tagged
-            #tagged = nltk.pos_tag(tokenized)
+            tagged = nltk.pos_tag(tokenized)
             # todo string-lemma dict
             map = {}
             lemma = []
@@ -43,14 +43,14 @@ def extract(root, book_nr, id):
             # print(type(chapter))
             if not chapter == "DELETE":
                 # todo tagged vs dict
-                writer.writerow([id, chapter, book_nr, p, s.text, map, lemma])
+                writer.writerow([id, chapter, book_nr, p, s.text, tagged, map, lemma])
                 id = id + 1
     return id
 
 
-with open('sentences_all_test_map.csv', 'w') as outcsv:
+with open('sentences_all.csv', 'w') as outcsv:
     writer = csv.writer(outcsv, delimiter=';')
-    writer.writerow(["_id", "Chapter", "Book", "Page", "Sentence", "Tagged", "Lemma"])
+    writer.writerow(["_id", "Chapter", "Book", "Page", "Sentence", "Tagged", "Mapped" "Lemma"])
 
     id = extract(root_b1, "I", id)
     id = extract(root_b2, "II", id)

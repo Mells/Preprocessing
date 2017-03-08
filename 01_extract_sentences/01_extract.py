@@ -22,7 +22,7 @@ FOOT_START = "<footnote>"
 FOOT_END = "</footnote>"
 
 book = "CTG3_Textbuch.txt"
-xml_file = 'book_3.xml'
+xml_file = 'book_3_pre.xml'
 chapters = 'Kapitel_B03.csv'
 
 sentences = []
