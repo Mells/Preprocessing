@@ -1,0 +1,24 @@
+# 01_extract_sentences
+converts the book to xml
+don't run it again if there were no changes to the book
+you have to edit it by hand
+
+# 02_tokenize
+
+creates a csv file from all entries tagged <sentence>
+"_id": the id of the sentence
+"Chapter": in which chapter it was found
+"Book": in which book it was found
+"Page": on which page it was found
+"Sentence": the sentence
+"Tagged": the tagged sentence
+"Mapped": a string:lemma dictionary (as string)
+"Lemma": the sentence lemmatized
+
+# 03_match_vocabulary_to_sentences
+
+trims the vocabulary for better matching and matches the vocabulary to the sentences
+add thre columns to csv
+"VocLemma": the lemma of the trimmed vocable
+"SentId": a list of sentences it was matched to
+"Tested": set to 0, how often a vocable has been answered correctly
