@@ -1,0 +1,7 @@
+_id;Vokabel;VocLemma;Uebersetzung;Status;Fundstelle;Band;Wortart;Beispielsatz;Hinweis;Tagged;Lemma;SentId;Tested
+1;Welcome to Camden Town!;['Welcome', 'to', 'Camden', 'Town', '!'];Willkommen in Camden Town!;passiv;Welcome;I;ph;;;[('Welcome', 'VB'), ('to', 'TO'), ('Camden', 'NNP'), ('Town', 'NNP'), ('!', '.')];['Welcome', 'to', 'Camden', 'Town', '!'];None;0
+2;Welcome to;['Welcome', 'to'];Willkommen in;passiv;Welcome;I;ph;;;[('Welcome', 'UH'), ('to', 'TO')];['Welcome', 'to'];None;0
+3;can;['can'];können;aktiv;Welcome;I;v;*can* <> *can't* / *cannot*;;[('can', 'MD')];['can'];['52', '62', '68'];0
+4;can't (= cannot);"[['ca', ""n't""], ['can', 'not']]";nicht können;aktiv;Welcome;I;ph;;;"[('ca', 'MD'), (""n't"", 'RB'), ('(', '('), ('=', 'VB'), ('can', 'MD'), ('not', 'RB'), (')', ')')]";"['ca', ""n't"", '(', '=', 'can', 'not', ')']";None;0
+5;to see;['see'];sehen;aktiv;Welcome;I;irr;I can *see* a car.;;[('to', 'TO'), ('see', 'VB')];['to', 'see'];['52'];0
+6;a/an;[['a'], ['an']];ein(e);aktiv;Welcome;I;d;*a* car / *an* email;;[('a/an', 'NN')];['a/an'];['2', '16', '28', '46', '48', '71', '74', '79', '81'];0
