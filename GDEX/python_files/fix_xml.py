@@ -1,4 +1,4 @@
-with open("xaa_groß.xml", 'r', encoding='iso-8859-5') as xmlin, open('xaa_fixed.xml', 'w', encoding='iso-8859-5') as xmlout:
+with open("/Users/kathrin1/Google Drive/Laptop/Universität/Master/Master/Corpus/ukwac1.xml", 'r', encoding='iso-8859-5') as xmlin, open('ukwac1_fixed.xml', 'w', encoding='iso-8859-5') as xmlout:
     xmlout.write("<start>\n")
     for line in xmlin:
         if line.startswith("<text"):

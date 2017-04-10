@@ -1,9 +1,7 @@
 import csv
 import ast
 import timeit
-import codecs
 from lxml import etree as et
-#import xml.etree.cElementTree as ET
 
 
 book1 = []
@@ -92,11 +90,7 @@ def whole_sentence(sentence):
 def contains_learned_words(s, voc, chapter, book):
     # --------------- Parser ---------------
     dvoc_parser = et.XMLParser()
-    dvoc_tree = et.parse("voc_1word.xml", dvoc_parser)
-
-    #dvoc_tree = ET.ElementTree(file='../voc_1word.xml')
-
-    #dvoc_root = dvoc_tree.getroot()
+    dvoc_tree = et.parse("../voc_1word.xml", dvoc_parser)
 
     # --------------- End ---------------
     # In this case words that appear in the book and better yet chapter (or earlier #) of the word
@@ -176,29 +170,10 @@ def compute_points(s, voc, chapter, book):
 
     return round(gdex_points, 1), round(learner_points, 2)
 
-# ------------------------------------- LOAD VOCABULARY ---------------------------------------------------
-
-def load_books():
-    with open("matched_vocabulary.csv", 'r') as sentin:
-        sentreader = csv.reader(sentin, delimiter=';')
-        next(sentreader)
-
-        for v_row in sentreader:
-            if v_row[6] == "I":
-                #book1.append(ast.literal_eval(v_row[2])) # voc lemma
-                book1.append(v_row)
-            elif v_row[6] == "II":
-                #book2.append(ast.literal_eval(v_row[2])) # voc lemma
-                book2.append(v_row)
-            elif v_row[6] == "III":
-                #book3.append(ast.literal_eval(v_row[2]))  # voc lemma
-                book3.append(v_row)
-    sentin.close()
-
 # ------------------------------------- LOAD FREQUENCIES --------------------------------------------------
 
 def load_frequencies():
-    with open('lemma.num.txt', 'r') as freqin:
+    with open('../lemma.num.txt', 'r') as freqin:
         f = csv.reader(freqin, delimiter=' ')
         row_number = 1
         for row in f:
@@ -212,7 +187,7 @@ def load_frequencies():
 # ------------------------------------- LOAD NER ----------------------------------------------------------
 
 def load_ner():
-    with open('NER.txt', 'r') as f:
+    with open('../NER.txt', 'r') as f:
         for ner in f:
             named_enteties.append(ner)
     f.close()
@@ -221,18 +196,16 @@ def load_ner():
 if __name__ == "__main__":
     start = timeit.default_timer()
 
-    print("#### starting loading vocabulary ####")
-    #load_books()
-    # --------------- Parser ---------------
-    voc_parser = et.XMLParser()
-    voc_tree = et.parse("voc.xml", voc_parser)
+    # --------------------------------- LOADING VOCABULARY ------------------------------------------------
 
-    #voc_tree = ET.ElementTree(file='../voc.xml')
+    print("#### starting loading vocabulary ####")
+    voc_parser = et.XMLParser()
+    voc_tree = et.parse("../voc.xml", voc_parser)
 
     voc_root = voc_tree.getroot()
-    # --------------- End ---------------
-
     print("#### finished loading vocabulary ####")
+
+    # --------------------------------- LOADING EXTRAS ------------------------------------------------
 
     print("#### starting loading frequencies ####")
     load_frequencies()
@@ -242,21 +215,15 @@ if __name__ == "__main__":
     load_ner()
     print("#### finished loading NE ####")
 
+    # --------------------------------- LOADING XML ------------------------------------------------
+
     print("#### starting loading xml ####")
-    # --------------- Parser ---------------
     sent_parser = et.XMLParser(encoding='iso-8859-5', recover = True)
-    #sent_tree = et.parse("corpora/ukwac1_fixed.xml", sent_parser)
-    sent_tree = et.parse("corpora/xaa.xml", sent_parser)
+    sent_tree = et.parse("../corpora/ukwac1_fixed.xml", sent_parser)
+    #sent_tree = et.parse("../corpora/xaa.xml", sent_parser)
 
-    #parser = ET.XMLParser(encoding='iso-8859-5')
-    #tree = ET.ElementTree()
-    #parse_tree = tree.parse('../corpora/ukwac1_fixed.xml', parser)
     sent_root = sent_tree.getroot()
-    # --------------- End ---------------
 
-    #with codecs.open('example_sentences.txt', 'w', 'utf-8') as xmlout:
-
-    #sent_root = sent_tree.getroot()
     all_s = []
     for txt in sent_root.findall('text'):
         for sent in txt.findall('s'):
@@ -273,98 +240,111 @@ if __name__ == "__main__":
             all_s.append(sentence)
     print("#### finished loading xml ####")
 
-    print("#### starting iterating over books ####")
-    b = 1
+    # --------------------------------- INDEXING SENTENCES ------------------------------------------------
+
+    print("#### starting indexing sentences ####")
+    indexed_sentences = {}
+    index = 0
+    for sentence in all_s:
+        no_dublicates = []
+        for word in sentence:
+            word[1] = word[1].lower()
+            if word[1] not in no_dublicates:
+                no_dublicates.append(word[1])
+                if word[1] in indexed_sentences:
+                    indexed_sentences[word[1]].append(index)
+                else:
+                    indexed_sentences[word[1]] = [index]
+        index += 1
+    print("#### finished indexing sentences ####")
+
+    print("#### starting iterating over vocabulary ####")
     vf = []
+    num_voc = 1
     for xml_voc in voc_root.findall('vocable'):
+        print(num_voc,"/", 3022)
         voc = xml_voc.get('name')
         chapter = xml_voc.find("chapter").get('name')
         book = xml_voc.find("book").get('name')
-        #print(voc, chapter, book)
         #print(voc)
         voc = ast.literal_eval(voc)
-        #print(voc)#, voc[0], type(voc[0]))
         if isinstance(voc[0], list):
-            #print(" -- list")
             # eg. [['ca', "n't"], ['can', 'not']]
             for v in voc:
-                voc_len = len(v)
-                for s_sentence in all_s:
-                    lemma_found = []
-                    for lemma in v:
-                        find_voc_only_once = False
+                first = True
+                same_indexes = []
+                for lemma in v:
+                    if first:
+                        sentence_list_1 = indexed_sentences.get(lemma.lower(), [])
+                        first = False
+                    else:
+                        sentence_list_2 = indexed_sentences.get(lemma.lower(), [])
+                        same_indexes = set(sentence_list_1).intersection(sentence_list_2)
+                        sentence_list_1 = same_indexes
+                if len(same_indexes) > 0:
+                    for index in same_indexes:
+                        sentence = all_s[index]
                         sent = ""
-                        for word in s_sentence:
+                        for word in sentence:
                             if word == ['        ']:
                                 continue
-                            if lemma.lower() == word[1].lower():
-                                if not find_voc_only_once:
-                                    lemma_found.append("Y")
-                                    find_voc_only_once = True
                             sent += word[0] + " "
-                    if voc_len == len(lemma_found):
-                        #print("found l", v, sent)
-                        gdex_points, learner_points = compute_points(s_sentence, voc, chapter, book)
+                        gdex_points, learner_points = compute_points(sentence, voc, chapter, book)
                         vf.append([gdex_points, learner_points, voc, chapter, book, sent])
-                        # if gdex_points > 60:
-                        #    #print(voc, chapter, book)
-                        #    vf.append([gdex_points, learner_points, voc, sent])
-                        # elif learner_points > 0.6:
-                        #    vf.append([gdex_points, learner_points, voc, sent])
+
         elif len(voc) > 1:
-            #print(" -- mehrere")
             # eg. ['Welcome', 'to', 'Camden', 'Town', '!']
-            for s_sentence in all_s:
-                lemma_found = []
-                voc_len = len(voc)
-                #print(voc_len)
-                for v in voc:
-                    find_voc_only_once = False
+            first = True
+            same_indexes = []
+            for v in voc:
+                #print(v)
+                if v in [".", "?", "1", ",", ";"]:
+                    continue
+                if first:
+                    sentence_list_1 = indexed_sentences.get(v.lower(), [])
+                    first = False
+                else:
+                    sentence_list_2 = indexed_sentences.get(v.lower(), [])
+                    same_indexes = set(sentence_list_1).intersection(sentence_list_2)
+                    sentence_list_1 = same_indexes
+            if len(same_indexes) > 0:
+                for index in same_indexes:
+                    sentence = all_s[index]
                     sent = ""
-                    for word in s_sentence:
+                    for word in sentence:
                         if word == ['        ']:
                             continue
-                        if v.lower() == word[1].lower():
-                            if not find_voc_only_once:
-                                lemma_found.append("Y")
-                                find_voc_only_once = True
                         sent += word[0] + " "
-                if voc_len == len(lemma_found):
-                    #print("found m", v, sent)
-                    gdex_points, learner_points = compute_points(s_sentence, voc, chapter, book)
+                    gdex_points, learner_points = compute_points(sentence, voc, chapter, book)
                     vf.append([gdex_points, learner_points, voc, chapter, book, sent])
-                    # if gdex_points > 60:
-                    #    #print(voc, chapter, book)
-                    #    vf.append([gdex_points, learner_points, voc, sent])
-                    # elif learner_points > 0.6:
-                    #    vf.append([gdex_points, learner_points, voc, sent])
         else:
             # ['see']
-            #print(" -- einzeln")
-            for s_sentence in all_s:
+            sentence_list = indexed_sentences.get(voc[0].lower())
+            if sentence_list is None:
+                num_voc += 1
+                continue
+            #print(v, sentence_list)
+            #print(len(sentence_list))
+            #if len(sentence_list)
+            for index in sentence_list:
+                sentence = all_s[index]
                 sent = ""
-                lemma_found = False
-                for word in s_sentence:
+                for word in sentence:
                     if word == ['        ']:
                         continue
                     sent += word[0] + " "
-                    if voc[0].lower() == word[1].lower():
-                        lemma_found = True
-                if lemma_found:
-                    #print("found e", voc, sent)
-                    gdex_points, learner_points = compute_points(s_sentence, voc, chapter, book)
-                    vf.append([gdex_points, learner_points, voc, chapter, book, sent])
-                    #if gdex_points > 60:
-                    #    #print(voc, chapter, book)
-                    #    vf.append([gdex_points, learner_points, voc, sent])
-                    #elif learner_points > 0.6:
-                    #    vf.append([gdex_points, learner_points, voc, sent])
+                gdex_points, learner_points = compute_points(sentence, voc, chapter, book)
+                vf.append([gdex_points, learner_points, voc, chapter, book, sent])
+        num_voc += 1
+    print("#### finished iterating over vocabulary ####")
 
-    with open("output/sentences_1.txt", "w") as s_out:
+    print("#### starting writing to file ####")
+    with open("../output/sentences_2.txt", "w") as s_out:
         for found_s in vf:
             #print(found_s)
             s_out.write(str(found_s)+"\n")
     s_out.close()
+    print("#### finished writing to file ####")
 
     end = timeit.default_timer()
     run_time = end-start

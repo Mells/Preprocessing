@@ -5,9 +5,17 @@
     <option name="CUSTOM_SCOPE_NAME" value="Current File" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="441dede1-1906-4ce9-91db-9ebf9fc1eeae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README" />
+    <list default="true" id="441dede1-1906-4ce9-91db-9ebf9fc1eeae" name="Default" comment="added GDEX again">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GDEX/output/sentences_1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GDEX/output/sentences_2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GDEX/python_files/new_gdex.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GDEX/example_sentences.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GDEX/output/sentences.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/X_Test/test.csv" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GDEX/python_files/fix_xml.py" afterPath="$PROJECT_DIR$/GDEX/python_files/fix_xml.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GDEX/python_files/gdex.py" afterPath="$PROJECT_DIR$/GDEX/python_files/gdex.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GDEX/python_files/show_error.py" afterPath="$PROJECT_DIR$/GDEX/python_files/show_error.py" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,32 +35,107 @@
     <favorites_list name="untitled" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="02_sentences_all.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02_tokenize/02_sentences_all.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="gdex.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GDEX/python_files/gdex.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="52" column="93" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="93" />
+            <state relative-caret-position="417">
+              <caret line="357" column="37" selection-start-line="357" selection-start-column="37" selection-end-line="357" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#484#764#0" expanded="false" />
+                <element signature="e#766#879#0" expanded="false" />
+                <element signature="e#988#1339#0" expanded="false" />
+                <element signature="e#1341#1458#0" expanded="false" />
+                <element signature="e#1847#1959#0" expanded="false" />
+                <element signature="e#2044#2564#0" expanded="false" />
+                <element signature="e#4754#4900#0" expanded="false" />
+                <element signature="e#5651#6257#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_gdex.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GDEX/python_files/new_gdex.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2865">
+              <caret line="350" column="34" selection-start-line="350" selection-start-column="34" selection-end-line="350" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#433#713#0" expanded="false" />
+                <element signature="e#715#828#0" expanded="false" />
+                <element signature="e#937#1288#0" expanded="false" />
+                <element signature="e#1290#1407#0" expanded="false" />
+                <element signature="e#1576#1794#0" expanded="false" />
+                <element signature="e#1796#1908#0" expanded="false" />
+                <element signature="e#1993#2513#0" expanded="false" />
+                <element signature="e#2678#4574#0" expanded="false" />
+                <element signature="e#4610#4756#0" expanded="false" />
+                <element signature="e#4914#5374#0" expanded="false" />
+                <element signature="e#5513#5841#0" expanded="false" />
+                <element signature="e#5972#6081#0" expanded="false" />
+                <element signature="e#7409#7766#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sentences_2.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GDEX/output/sentences_2.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64515">
+              <caret line="4301" column="22" selection-start-line="4298" selection-start-column="13" selection-end-line="4301" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README">
+      <file leaf-file-name="sentences_1.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GDEX/output/sentences_1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="65760">
+              <caret line="4384" column="27" selection-start-line="4381" selection-start-column="0" selection-end-line="4384" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="matched_vocabulary.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GDEX/matched_vocabulary.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+              <caret line="3" column="5" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="match.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/03_match_vocabulary_to_sentences/match.py">
+      <file leaf-file-name="show_error.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GDEX/python_files/show_error.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="88" column="119" selection-start-line="88" selection-start-column="63" selection-end-line="88" selection-end-column="119" />
+            <state relative-caret-position="150">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="xaa.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GDEX/corpora/xaa.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56220">
+              <caret line="3748" column="10" selection-start-line="3748" selection-start-column="8" selection-end-line="3748" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fix_xml.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GDEX/python_files/fix_xml.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -73,25 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../untitled/CTG1_Textbuch.txt" />
-        <option value="$PROJECT_DIR$/../untitled/book_1.xml" />
-        <option value="$PROJECT_DIR$/../untitled/CTG2_Textbuch.txt" />
-        <option value="$PROJECT_DIR$/../untitled/CTG3_Textbuch.txt" />
-        <option value="$PROJECT_DIR$/../untitled/TagText.py" />
-        <option value="$PROJECT_DIR$/match_sentences/Vokabelliste_komplett.csv" />
-        <option value="$PROJECT_DIR$/extract_sentences/book_1.xml" />
-        <option value="$PROJECT_DIR$/extract_sentences/CTG1_Textbuch.txt" />
-        <option value="$PROJECT_DIR$/extract_sentences/Kapitel_B01.csv" />
-        <option value="$PROJECT_DIR$/extract_sentences/Kapitel_B02.csv" />
-        <option value="$PROJECT_DIR$/extract_sentences/CTG2_Textbuch.txt" />
-        <option value="$PROJECT_DIR$/extract_sentences/book_2.xml" />
-        <option value="$PROJECT_DIR$/extract_sentences/extract.py" />
-        <option value="$PROJECT_DIR$/extract_sentences/CTG3_Textbuch.txt" />
-        <option value="$PROJECT_DIR$/extract_sentences/Kapitel_B03.csv" />
-        <option value="$PROJECT_DIR$/extract_sentences/book_3.xml" />
-        <option value="$PROJECT_DIR$/match_sentences/match.py" />
-        <option value="$PROJECT_DIR$/01_extract_sentences/extract.py" />
-        <option value="$PROJECT_DIR$/02_tokenize/tokenize.py" />
         <option value="$PROJECT_DIR$/02_tokenize/02_tokenize.py" />
         <option value="$PROJECT_DIR$/02_tokenize/02_vocabulary.py" />
         <option value="$PROJECT_DIR$/01_extract_sentences/book_2.xml" />
@@ -117,11 +181,32 @@
         <option value="$PROJECT_DIR$/02_tokenize/new_Vokabelliste.csv" />
         <option value="$PROJECT_DIR$/01_extract_sentences/edit/book_3_edit_wo_delete.xml" />
         <option value="$PROJECT_DIR$/01_extract_sentences/book_3.xml" />
-        <option value="$PROJECT_DIR$/GDEX/gdex.py" />
         <option value="$PROJECT_DIR$/01_extract_sentences/01_extract.py" />
         <option value="$PROJECT_DIR$/02_tokenize/02_sentences_all.py" />
         <option value="$PROJECT_DIR$/03_match_sentences/match.py" />
         <option value="$PROJECT_DIR$/README" />
+        <option value="$PROJECT_DIR$/GDEX/fix_xml.py" />
+        <option value="$PROJECT_DIR$/GDEX/show_error.py" />
+        <option value="$PROJECT_DIR$/GDEX/example_sentences.txt" />
+        <option value="$PROJECT_DIR$/GDEX/xaa.xml" />
+        <option value="$PROJECT_DIR$/GDEX/test" />
+        <option value="$PROJECT_DIR$/GDEX/test_vocabulary.csv" />
+        <option value="$PROJECT_DIR$/GDEX/gdex.py" />
+        <option value="$PROJECT_DIR$/GDEX/test.xml" />
+        <option value="$PROJECT_DIR$/GDEX/gdex1.py" />
+        <option value="$PROJECT_DIR$/GDEX/xml_as_text.txt" />
+        <option value="$PROJECT_DIR$/GDEX/preprocess.py" />
+        <option value="$PROJECT_DIR$/GDEX/python_files/gdex1.py" />
+        <option value="$PROJECT_DIR$/GDEX/voc.xml" />
+        <option value="$PROJECT_DIR$/GDEX/lemma.num.txt" />
+        <option value="$PROJECT_DIR$/GDEX/python_files/preprocess.py" />
+        <option value="$PROJECT_DIR$/GDEX/python_files/gdex2.py" />
+        <option value="$PROJECT_DIR$/GDEX/python_files/show_error.py" />
+        <option value="$PROJECT_DIR$/GDEX/python_files/fix_xml.py" />
+        <option value="$PROJECT_DIR$/GDEX/python_files/gdex.py" />
+        <option value="$PROJECT_DIR$/GDEX/output/sentences_2.txt" />
+        <option value="$PROJECT_DIR$/GDEX/python_files/gdex_27.py" />
+        <option value="$PROJECT_DIR$/GDEX/python_files/new_gdex.py" />
       </list>
     </option>
   </component>
@@ -129,7 +214,7 @@
     <option name="x" value="21" />
     <option name="y" value="23" />
     <option name="width" value="1408" />
-    <option name="height" value="803" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -185,7 +270,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="03_match_vocabulary_to_sentences" />
+              <option name="myItemId" value="GDEX" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -199,7 +284,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="02_tokenize" />
+              <option name="myItemId" value="GDEX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python_files" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Preprocessing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Preprocessing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GDEX" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="output" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -209,108 +316,108 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/GDEX/python_files" />
+      <recent name="$PROJECT_DIR$/GDEX" />
       <recent name="$PROJECT_DIR$/01_extract_sentences" />
       <recent name="$PROJECT_DIR$/01_extract_sentences/edit" />
       <recent name="$PROJECT_DIR$/X_Test/02_extract_sentences" />
-      <recent name="$PROJECT_DIR$/X_Test" />
-      <recent name="$PROJECT_DIR$/02_tokenize" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/GDEX/corpora" />
+      <recent name="$PROJECT_DIR$/GDEX/python_files" />
+      <recent name="$PROJECT_DIR$/GDEX" />
       <recent name="$PROJECT_DIR$/X_Test/02_extract_sentences" />
       <recent name="$PROJECT_DIR$/01_extract_sentences/edit" />
-      <recent name="$PROJECT_DIR$/01_extract_sentences/aussortiert" />
-      <recent name="$PROJECT_DIR$/02_tokenize" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.match (1)">
-    <configuration default="false" name="tokenize" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.gdex_27">
+    <configuration default="false" name="gdex" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/02_tokenize" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GDEX" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Preprocessing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02_tokenize/02_sentences.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GDEX/python_files/gdex.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="match (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="gdex2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/03_match_sentences" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GDEX/python_files" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Preprocessing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/03_match_sentences/match.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GDEX/python_files/gdex.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="02_sentences_all" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="show_error" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/02_tokenize" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GDEX/python_files" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Preprocessing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02_tokenize/02_sentences_all.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GDEX/python_files/show_error.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="01_extract_less" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="fix_xml" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/01_extract_sentences" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GDEX/python_files" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Preprocessing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01_extract_sentences/01_extract_less.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GDEX/python_files/fix_xml.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="02_extract" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="gdex_27" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/X_Test/02_extract_sentences" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GDEX/python_files" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Preprocessing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/X_Test/02_extract_sentences/02_extract.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GDEX/python_files/gdex_271.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -450,19 +557,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.tokenize" />
-      <item index="1" class="java.lang.String" itemvalue="Python.match (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.02_sentences_all" />
-      <item index="3" class="java.lang.String" itemvalue="Python.01_extract_less" />
-      <item index="4" class="java.lang.String" itemvalue="Python.02_extract" />
+      <item index="0" class="java.lang.String" itemvalue="Python.gdex" />
+      <item index="1" class="java.lang.String" itemvalue="Python.gdex2" />
+      <item index="2" class="java.lang.String" itemvalue="Python.show_error" />
+      <item index="3" class="java.lang.String" itemvalue="Python.fix_xml" />
+      <item index="4" class="java.lang.String" itemvalue="Python.gdex_27" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.match (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.02_sentences_all" />
-        <item index="2" class="java.lang.String" itemvalue="Python.01_extract_less" />
-        <item index="3" class="java.lang.String" itemvalue="Python.02_extract" />
-        <item index="4" class="java.lang.String" itemvalue="Python.tokenize" />
+        <item index="0" class="java.lang.String" itemvalue="Python.gdex_27" />
+        <item index="1" class="java.lang.String" itemvalue="Python.gdex" />
+        <item index="2" class="java.lang.String" itemvalue="Python.fix_xml" />
+        <item index="3" class="java.lang.String" itemvalue="Python.show_error" />
+        <item index="4" class="java.lang.String" itemvalue="Python.gdex2" />
       </list>
     </recent_temporary>
   </component>
@@ -494,7 +601,42 @@
       <option name="project" value="LOCAL" />
       <updated>1488965550908</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="cleaned">
+      <created>1488967045384</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1488967045384</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added GDEX">
+      <created>1491311603344</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1491311603344</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added GDEX">
+      <created>1491312158800</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1491312158800</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added GDEX">
+      <created>1491315948998</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1491315948998</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added GDEX again">
+      <created>1491319050480</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1491319050480</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -507,43 +649,44 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="21" y="23" width="1408" height="803" extended-state="0" />
-    <editor active="true" />
+    <frame x="21" y="23" width="1408" height="797" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2372026" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32770744" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2372026" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32673267" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3281471" sideWeight="0.5082913" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29593268" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24934383" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819074" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29420084" sideWeight="0.739726" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24873829" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3281471" sideWeight="0.49170873" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1513437" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37130803" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3319149" sideWeight="0.8269647" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32489452" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32056737" sideWeight="0.49170873" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32770744" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39179632" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24934383" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41560283" sideWeight="0.16438356" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1513437" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29593268" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41560283" sideWeight="0.8356164" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819074" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2372026" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24934383" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32340425" sideWeight="0.49459264" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24873829" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -563,95 +706,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
     <MESSAGE value="cleaned" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaned" />
+    <MESSAGE value="added GDEX" />
+    <MESSAGE value="added GDEX again" />
+    <option name="LAST_COMMIT_MESSAGE" value="added GDEX again" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/nltk/stem/wordnet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02_tokenize/new_Vokabelliste_komplett_bearbeitet_19-1-17.csv" />
-    <entry file="file://$PROJECT_DIR$/03_match_sentences/new_sentences.csv" />
-    <entry file="file://$PROJECT_DIR$/01_extract_sentences/Kapitel_B02.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_extract_sentences/book_2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="826" column="29" selection-start-line="826" selection-start-column="29" selection-end-line="826" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02_tokenize/sentences_b02.csv" />
-    <entry file="file://$PROJECT_DIR$/02_tokenize/sentences.csv" />
-    <entry file="file://$PROJECT_DIR$/02_tokenize/sentences" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/ast.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02_tokenize/sentences_b01.csv" />
-    <entry file="file://$PROJECT_DIR$/01_extract_sentences/aussortiert/book_1_old.xml" />
-    <entry file="file://$PROJECT_DIR$/01_extract_sentences/edit/book_1_edit.xml" />
-    <entry file="file://$PROJECT_DIR$/03_match_vocabulary_to_sentences/matched_vocabulary.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/X_Test/02_extract_sentences/CTG1_Textbuch.txt" />
-    <entry file="file://$PROJECT_DIR$/X_Test/02_extract_sentences/CTG1_Textbuch_un8.txt" />
-    <entry file="file://$PROJECT_DIR$/X_Test/02_extract_sentences/Kapitel_B01.csv" />
-    <entry file="file://$PROJECT_DIR$/X_Test/02_extract_sentences/book_1.xml" />
-    <entry file="file://$PROJECT_DIR$/01_extract_sentences/edit/book_1_edit02.xml" />
-    <entry file="file://$PROJECT_DIR$/01_extract_sentences/aussortiert/book_1_less.xml" />
-    <entry file="file://$PROJECT_DIR$/02_tokenize/Vokabelliste.csv" />
-    <entry file="file://$PROJECT_DIR$/02_tokenize/02_vocabulary.py" />
-    <entry file="file://$PROJECT_DIR$/X_Test/02_extract_sentences/02_extract.py" />
-    <entry file="file://$PROJECT_DIR$/02_tokenize/sentences_all.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-23970">
-          <caret line="1019" column="7" selection-start-line="1019" selection-start-column="7" selection-end-line="1019" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_extract_sentences/Kapitel_B03.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_extract_sentences/edit/book_2_edit_wo_delete.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40560">
-          <caret line="2704" column="42" selection-start-line="2704" selection-start-column="42" selection-end-line="2704" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_extract_sentences/CTG2_Textbuch.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28245">
-          <caret line="1883" column="150" selection-start-line="1883" selection-start-column="142" selection-end-line="1883" selection-end-column="150" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01_extract_sentences/edit/book_3_edit_wo_delete.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -684,14 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="528" column="27" selection-start-line="528" selection-start-column="27" selection-end-line="528" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GDEX/gdex.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -699,7 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" column="17" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -751,20 +807,7 @@
     <entry file="file://$PROJECT_DIR$/03_match_sentences/matched_sentences.csv" />
     <entry file="file://$PROJECT_DIR$/X_Test/x_test" />
     <entry file="file://$PROJECT_DIR$/X_Test/sentences_all.csv" />
-    <entry file="file://$PROJECT_DIR$/X_Test/test.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="92" selection-start-line="12" selection-start-column="92" selection-end-line="12" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/03_match_vocabulary_to_sentences/matched_vocabulary.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/X_Test/test.csv" />
     <entry file="file://$PROJECT_DIR$/02_tokenize/sentences_all.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40739">
@@ -772,27 +815,223 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02_tokenize/02_sentences_all.py">
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/xml/etree/ElementTree.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="52" column="93" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="93" />
-          <folding />
+        <state relative-caret-position="140">
+          <caret line="1325" column="0" selection-start-line="1325" selection-start-column="0" selection-end-line="1325" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/03_match_vocabulary_to_sentences/match.py">
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/encodings/iso8859_5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="88" column="119" selection-start-line="88" selection-start-column="63" selection-end-line="88" selection-end-column="119" />
-          <folding />
+        <state relative-caret-position="141">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        <state relative-caret-position="15">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02_tokenize/02_sentences_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03_match_vocabulary_to_sentences/matched_vocabulary.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1215">
+          <caret line="1" column="111" selection-start-line="1" selection-start-column="108" selection-end-line="1" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GDEX/python_files/gdex.py" />
+    <entry file="file://$PROJECT_DIR$/03_match_vocabulary_to_sentences/match.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="94" column="31" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/nltk/chunk/named_entity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/nltk/tag/sequential.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GDEX/xml_as_text.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2505">
+          <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GDEX/NER.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
+          <caret line="116" column="2" selection-start-line="116" selection-start-column="2" selection-end-line="116" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GDEX/test_vocabulary.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="151" selection-start-line="6" selection-start-column="151" selection-end-line="6" selection-end-column="151" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GDEX/python_files/gdex1.py" />
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/ast.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GDEX/lemma.num.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94755">
+          <caret line="6317" column="25" selection-start-line="6317" selection-start-column="25" selection-end-line="6317" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GDEX/voc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22012" selection-start-line="0" selection-start-column="22012" selection-end-line="0" selection-end-column="22012" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GDEX/python_files/preprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="108" column="31" selection-start-line="108" selection-start-column="31" selection-end-line="108" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GDEX/voc_1word.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1273" selection-start-line="0" selection-start-column="1268" selection-end-line="0" selection-end-column="1273" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GDEX/corpora/test.xml" />
+    <entry file="file://$PROJECT_DIR$/GDEX/output/sentences.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GDEX/python_files/show_error.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GDEX/corpora/xaa.xml">
+      <provider editor-type-id="LargeFileEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56220">
+          <caret line="3748" column="10" selection-start-line="3748" selection-start-column="8" selection-end-line="3748" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GDEX/example_sentences.txt" />
+    <entry file="file://$PROJECT_DIR$/GDEX/python_files/fix_xml.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GDEX/output/sentences_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65760">
+          <caret line="4384" column="27" selection-start-line="4381" selection-start-column="0" selection-end-line="4384" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GDEX/output/sentences_2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64515">
+          <caret line="4301" column="22" selection-start-line="4298" selection-start-column="13" selection-end-line="4301" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GDEX/matched_vocabulary.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GDEX/python_files/gdex_271.py" />
+    <entry file="file://$PROJECT_DIR$/GDEX/python_files/new_gdex.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2865">
+          <caret line="350" column="34" selection-start-line="350" selection-start-column="34" selection-end-line="350" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#433#713#0" expanded="false" />
+            <element signature="e#715#828#0" expanded="false" />
+            <element signature="e#937#1288#0" expanded="false" />
+            <element signature="e#1290#1407#0" expanded="false" />
+            <element signature="e#1576#1794#0" expanded="false" />
+            <element signature="e#1796#1908#0" expanded="false" />
+            <element signature="e#1993#2513#0" expanded="false" />
+            <element signature="e#2678#4574#0" expanded="false" />
+            <element signature="e#4610#4756#0" expanded="false" />
+            <element signature="e#4914#5374#0" expanded="false" />
+            <element signature="e#5513#5841#0" expanded="false" />
+            <element signature="e#5972#6081#0" expanded="false" />
+            <element signature="e#7409#7766#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GDEX/python_files/gdex_27.py" />
+    <entry file="file://$PROJECT_DIR$/GDEX/python_files/gdex.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="357" column="37" selection-start-line="357" selection-start-column="37" selection-end-line="357" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#484#764#0" expanded="false" />
+            <element signature="e#766#879#0" expanded="false" />
+            <element signature="e#988#1339#0" expanded="false" />
+            <element signature="e#1341#1458#0" expanded="false" />
+            <element signature="e#1847#1959#0" expanded="false" />
+            <element signature="e#2044#2564#0" expanded="false" />
+            <element signature="e#4754#4900#0" expanded="false" />
+            <element signature="e#5651#6257#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
