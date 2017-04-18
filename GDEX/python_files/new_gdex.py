@@ -3,7 +3,6 @@ import ast
 import timeit
 from lxml import etree as et
 
-
 book1 = []
 book2 = []
 book3 = []
@@ -219,7 +218,7 @@ if __name__ == "__main__":
 
     print("#### starting loading xml ####")
     sent_parser = et.XMLParser(encoding='iso-8859-5', recover = True)
-    sent_tree = et.parse("../corpora/ukwac1_fixed.xml", sent_parser)
+    sent_tree = et.parse("../corpora/parts/ukwac_1_3.xml", sent_parser)
     #sent_tree = et.parse("../corpora/xaa.xml", sent_parser)
 
     sent_root = sent_tree.getroot()
@@ -237,7 +236,8 @@ if __name__ == "__main__":
                     pass
                 else:
                     sentence.append(word)
-            all_s.append(sentence)
+            if len(sentence) < 25:
+                all_s.append(sentence)
     print("#### finished loading xml ####")
 
     # --------------------------------- INDEXING SENTENCES ------------------------------------------------
@@ -246,15 +246,20 @@ if __name__ == "__main__":
     indexed_sentences = {}
     index = 0
     for sentence in all_s:
+        #print(sentence)
         no_dublicates = []
         for word in sentence:
-            word[1] = word[1].lower()
-            if word[1] not in no_dublicates:
-                no_dublicates.append(word[1])
-                if word[1] in indexed_sentences:
-                    indexed_sentences[word[1]].append(index)
+            #print(word)
+            w = word[1].lower()
+            if w not in no_dublicates:
+                no_dublicates.append(w)
+                if w in indexed_sentences:
+                    #print(w)
+                    #print("w1 ",indexed_sentences[w])
+                    indexed_sentences[w].append(index)
+                    #print("w2", indexed_sentences[w])
                 else:
-                    indexed_sentences[word[1]] = [index]
+                    indexed_sentences[w] = [index]
         index += 1
     print("#### finished indexing sentences ####")
 
@@ -262,8 +267,8 @@ if __name__ == "__main__":
     vf = []
     num_voc = 1
     for xml_voc in voc_root.findall('vocable'):
-        print(num_voc,"/", 3022)
         voc = xml_voc.get('name')
+        print(num_voc, "/", 3022, " - ", voc)
         chapter = xml_voc.find("chapter").get('name')
         book = xml_voc.find("book").get('name')
         #print(voc)
@@ -276,19 +281,27 @@ if __name__ == "__main__":
                 for lemma in v:
                     if first:
                         sentence_list_1 = indexed_sentences.get(lemma.lower(), [])
+                        # in case its just one word
+                        same_indexes = sentence_list_1
                         first = False
                     else:
                         sentence_list_2 = indexed_sentences.get(lemma.lower(), [])
                         same_indexes = set(sentence_list_1).intersection(sentence_list_2)
                         sentence_list_1 = same_indexes
+                print(len(same_indexes))
                 if len(same_indexes) > 0:
+                    #i = 1
+                    #l = len(same_indexes)
                     for index in same_indexes:
+                        #print(str(i)+"/"+str(l))
+                        #i += 1
                         sentence = all_s[index]
                         sent = ""
                         for word in sentence:
                             if word == ['        ']:
                                 continue
                             sent += word[0] + " "
+                        #print(sent)
                         gdex_points, learner_points = compute_points(sentence, voc, chapter, book)
                         vf.append([gdex_points, learner_points, voc, chapter, book, sent])
 
@@ -302,19 +315,27 @@ if __name__ == "__main__":
                     continue
                 if first:
                     sentence_list_1 = indexed_sentences.get(v.lower(), [])
+                    # in case its just one word
+                    same_indexes = sentence_list_1
                     first = False
                 else:
                     sentence_list_2 = indexed_sentences.get(v.lower(), [])
                     same_indexes = set(sentence_list_1).intersection(sentence_list_2)
                     sentence_list_1 = same_indexes
+            print(len(same_indexes))
             if len(same_indexes) > 0:
+                #i = 1
+                #l = len(same_indexes)
                 for index in same_indexes:
+                    #print(str(i) + "/" + str(l))
+                    #i += 1
                     sentence = all_s[index]
                     sent = ""
                     for word in sentence:
                         if word == ['        ']:
                             continue
                         sent += word[0] + " "
+                    #print(sent)
                     gdex_points, learner_points = compute_points(sentence, voc, chapter, book)
                     vf.append([gdex_points, learner_points, voc, chapter, book, sent])
         else:
@@ -326,20 +347,26 @@ if __name__ == "__main__":
             #print(v, sentence_list)
             #print(len(sentence_list))
             #if len(sentence_list)
+            #i = 1
+            #l = len(same_indexes)
+            print(len(sentence_list))
             for index in sentence_list:
+                #print(str(i) + "/" + str(l))
+                #i += 1
                 sentence = all_s[index]
                 sent = ""
                 for word in sentence:
                     if word == ['        ']:
                         continue
                     sent += word[0] + " "
+                #print(sent)
                 gdex_points, learner_points = compute_points(sentence, voc, chapter, book)
                 vf.append([gdex_points, learner_points, voc, chapter, book, sent])
         num_voc += 1
     print("#### finished iterating over vocabulary ####")
 
     print("#### starting writing to file ####")
-    with open("../output/sentences_2.txt", "w") as s_out:
+    with open("../output/sentences_parts.txt", "a") as s_out:
         for found_s in vf:
             #print(found_s)
             s_out.write(str(found_s)+"\n")

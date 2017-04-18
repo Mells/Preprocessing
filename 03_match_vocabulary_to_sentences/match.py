@@ -78,7 +78,7 @@ def trim_vocabulary(voc_list):
     return voc_list, voc_list2, second_voc_list
 
 with open("../02_tokenize/sentences_all.csv", 'r') as sentin, open('../02_tokenize/new_Vokabelliste.csv', 'r') as vocin:
-    with open("test_vocabulary.csv", 'w') as vocout, open("not_matched.csv", 'w') as nmatched:
+    with open("matched_vocabulary.csv", 'w') as vocout, open("not_matched.csv", 'w') as nmatched:
 
         sentreader = csv.reader(sentin, delimiter=';')
         vocreader = csv.reader(vocin, delimiter=';')
