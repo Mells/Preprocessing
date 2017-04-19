@@ -218,7 +218,7 @@ if __name__ == "__main__":
 
     print("#### starting loading xml ####")
     sent_parser = et.XMLParser(encoding='iso-8859-5', recover = True)
-    sent_tree = et.parse("../corpora/parts/ukwac_1_3.xml", sent_parser)
+    sent_tree = et.parse("../corpora/parts/ukwac_1_4.xml", sent_parser)
     #sent_tree = et.parse("../corpora/xaa.xml", sent_parser)
 
     sent_root = sent_tree.getroot()

@@ -17,7 +17,7 @@ with open("../03_match_vocabulary_to_sentences/matched_vocabulary.csv", 'r') as 
     vocwriter = csv.writer(v_write, delimiter=';')
     
     vocwriter.writerow(["Lemma"] + ["GDEX"] + ["Learner"])
-    sentwriter.writerow(["_id"] + ["Chapter"] + ["Book"] + ["Page"] + ["Sentence"] + ["Tagged"] + ["Lemma"])
+    sentwriter.writerow(["_id"] + ["Chapter"] + ["Book"] + ["Page"] + ["Sentence"] + ["Tagged"] + ["Mapped"] + ["Lemma"])
 
     all_sentences = []
     all_used_sentences = []
@@ -27,9 +27,11 @@ with open("../03_match_vocabulary_to_sentences/matched_vocabulary.csv", 'r') as 
 
     # for every vocable get the 5(?) best gdex and learner sentences
     next(vocreader)
+    i = 1
     for v_row in vocreader:
         v_list = v_row[2]  # Lemma
-        print(v_list)
+        print(str(i), str(v_list))
+        i += 1
         v_list = ast.literal_eval(v_list)
 
         found_sentences = []
@@ -84,8 +86,14 @@ with open("../03_match_vocabulary_to_sentences/matched_vocabulary.csv", 'r') as 
         # tagged
         tagged = nltk.pos_tag(tokenized)
         # lemma
+        map = {}
         lemma = []
         for item in tokenized:
+            # print("item", item)
             lemma.append(lemmatizer.lemmatize(item))
-        sentwriter.writerow([id, "xxx", "xxx", "x", s[5], tagged, lemma])
+            if lemmatizer.lemmatize(item) in map:
+                map[lemmatizer.lemmatize(item)].append(item)
+            else:
+                map[lemmatizer.lemmatize(item)] = [item]
+        sentwriter.writerow([id, "xxx", "xxx", "x", s[5], tagged, map, lemma])
         id += 1

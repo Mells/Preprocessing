@@ -50,7 +50,7 @@ def extract(root, book_nr, id):
 
 with open('sentences_all.csv', 'w') as outcsv:
     writer = csv.writer(outcsv, delimiter=';')
-    writer.writerow(["_id", "Chapter", "Book", "Page", "Sentence", "Tagged", "Mapped" "Lemma"])
+    writer.writerow(["_id", "Chapter", "Book", "Page", "Sentence", "Tagged", "Mapped", "Lemma"])
 
     id = extract(root_b1, "I", id)
     id = extract(root_b2, "II", id)
